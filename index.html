@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+
+    <nav
+      class="flex justify-between border-gray-200 bg-white shadow-2xl dark:bg-white"
+    >
+      <div
+        class="flex max-w-screen-xl flex-wrap items-center justify-between p-4"
+      >
+        <a href="/" class="flex items-center">
+          <img
+            class="w-20"
+            src="https://s3.ap-south-1.amazonaws.com/assets.ynos.in/startup-logos/YNOS393110.jpg"
+            class="mr-3 h-8"
+            alt=""
+          />
+          <span class="self-center text-2xl font-semibold dark:text-black"
+            >DEEP <a class="text-2xl font-semibold text-blue-700">THOUGHT</a>
+          </span>
+        </a>
+      </div>
+      <div class="flex items-center md:order-2">
+        <button
+          type="button"
+          data-dropdown-toggle="language-dropdown-menu"
+          class="inline-flex cursor-pointer items-center justify-center text-sm font-medium"
+        >
+          <svg
+            class="mr-2 h-8 w-8 rounded-full bg-blue-700"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 576 512"
+          >
+            >
+            <style>
+              svg {
+                fill: #e3e5e8;
+              }
+            </style>
+            <path
+              d="M543.8 287.6c17 0 32-14 32-32.1c1-9-3-17-11-24L512 185V64c0-17.7-14.3-32-32-32H448c-17.7 0-32 14.3-32 32v36.7L309.5 7c-6-5-14-7-21-7s-15 1-22 8L10 231.5c-7 7-10 15-10 24c0 18 14 32.1 32 32.1h32v69.7c-.1 .9-.1 1.8-.1 2.8V472c0 22.1 17.9 40 40 40h16c1.2 0 2.4-.1 3.6-.2c1.5 .1 3 .2 4.5 .2H160h24c22.1 0 40-17.9 40-40V448 384c0-17.7 14.3-32 32-32h64c17.7 0 32 14.3 32 32v64 24c0 22.1 17.9 40 40 40h24 32.5c1.4 0 2.8 0 4.2-.1c1.1 .1 2.2 .1 3.3 .1h16c22.1 0 40-17.9 40-40V455.8c.3-2.6 .5-5.3 .5-8.1l-.7-160.2h32z"
+            />
+          </svg>
+
+          <svg
+            class="mr-2 h-8 w-8 rounded-full bg-blue-700"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+          >
+            <path
+              d="M128 32h32c17.7 0 32 14.3 32 32V96H96V64c0-17.7 14.3-32 32-32zm64 96V448c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32V388.9c0-34.6 9.4-68.6 27.2-98.3C40.9 267.8 49.7 242.4 53 216L60.5 156c2-16 15.6-28 31.8-28H192zm227.8 0c16.1 0 29.8 12 31.8 28L459 216c3.3 26.4 12.1 51.8 25.8 74.6c17.8 29.7 27.2 63.7 27.2 98.3V448c0 17.7-14.3 32-32 32H352c-17.7 0-32-14.3-32-32V128h99.8zM320 64c0-17.7 14.3-32 32-32h32c17.7 0 32 14.3 32 32V96H320V64zm-32 64V288H224V128h64z"
+            />
+          </svg>
+          <svg
+            class="mr-2 h-8 w-8 rounded-full bg-blue-700"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+          >
+            <path
+              d="M78.6 5C69.1-2.4 55.6-1.5 47 7L7 47c-8.5 8.5-9.4 22-2.1 31.6l80 104c4.5 5.9 11.6 9.4 19 9.4h54.1l109 109c-14.7 29-10 65.4 14.3 89.6l112 112c12.5 12.5 32.8 12.5 45.3 0l64-64c12.5-12.5 12.5-32.8 0-45.3l-112-112c-24.2-24.2-60.6-29-89.6-14.3l-109-109V104c0-7.5-3.5-14.5-9.4-19L78.6 5zM19.9 396.1C7.2 408.8 0 426.1 0 444.1C0 481.6 30.4 512 67.9 512c18 0 35.3-7.2 48-19.9L233.7 374.3c-7.8-20.9-9-43.6-3.6-65.1l-61.7-61.7L19.9 396.1zM512 144c0-10.5-1.1-20.7-3.2-30.5c-2.4-11.2-16.1-14.1-24.2-6l-63.9 63.9c-3 3-7.1 4.7-11.3 4.7H352c-8.8 0-16-7.2-16-16V102.6c0-4.2 1.7-8.3 4.7-11.3l63.9-63.9c8.1-8.1 5.2-21.8-6-24.2C388.7 1.1 378.5 0 368 0C288.5 0 224 64.5 224 144l0 .8 85.3 85.3c36-9.1 75.8 .5 104 28.7L429 274.5c49-23 83-72.8 83-130.5zM56 432a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z"
+            />
+          </svg>
+          <svg
+            class="mr-2 h-8 w-8 rounded-full bg-blue-700"
+            xmlns="http://www.w3.org/2000/svg"
+            height="1em"
+            viewBox="0 0 448 512"
+          >
+            <path
+              d="M224 0c-17.7 0-32 14.3-32 32V51.2C119 66 64 130.6 64 208v18.8c0 47-17.3 92.4-48.5 127.6l-7.4 8.3c-8.4 9.4-10.4 22.9-5.3 34.4S19.4 416 32 416H416c12.6 0 24-7.4 29.2-18.9s3.1-25-5.3-34.4l-7.4-8.3C401.3 319.2 384 273.9 384 226.8V208c0-77.4-55-142-128-156.8V32c0-17.7-14.3-32-32-32zm45.3 493.3c12-12 18.7-28.3 18.7-45.3H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7z"
+            />
+          </svg>
+          <img
+            class="h-8 w-8 rounded-full"
+            src="https://cdn-icons-png.flaticon.com/512/4778/4778101.png"
+            alt="Rounded avatar"
+          />
+          <svg
+            class="mr-2 h-8 w-8 rounded-full text-blue-700"
+            xmlns="http://www.w3.org/2000/svg"
+            height="1em"
+            viewBox="0 0 128 512"
+          >
+            <path
+              d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z"
+            />
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <!-- NEXT -->
+
+    <div class="container pt-7">
+      <div class="first-heading flex justify-around">
+        <h1 class="font-sans text-2xl font-bold text-blue-800">
+          Technical Project Management
+        </h1>
+        <button
+          type="button"
+          class="mb-2 mr-2 rounded-lg bg-blue-700 px-5 py-2.5 text-sm font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+        >
+          Default
+        </button>
+      </div>
+      <div class="content ml-10 mt-6 w-10/12 rounded-lg bg-slate-200 pb-1">
+        <h1 class="ml-11 pt-6 text-lg font-bold">
+          Explore the world of management
+        </h1>
+        <p class="m-11 mt-4">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia
+          autem aut libero sunt quisquam iusto officiis earum reiciendis
+          dolorem. Nostrum fugiat quae odit fugit voluptates autem nesciunt odio
+          culpa molestias.
+        </p>
+      </div>
+    </div>
+
+    <!---2 DIV--->
+
+    <div class="second m-6 mt-16 rounded-3xl border-4">
+      <div class="first-div">
+        <div class="head flex justify-evenly rounded-t-2xl bg-black p-3">
+          <h1 class="text-lg text-white">Technical Project Management</h1>
+
+          <svg
+            class="h-8"
+            xmlns="http://www.w3.org/2000/svg"
+            height="1em"
+            viewBox="0 0 512 512"
+          >
+            <style>
+              <!-- svg{} -->
+            </style>
+            <path
+              d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"
+            />
+          </svg>
+        </div>
+        <div class="heads mb-44 bg-white">
+          <div>
+            <h1 class="ml-5 mt-9">
+              <a class="text-lg font-bold"> Description :</a> Story of Alignment
+              Scope of Agility Specific Accountable Staggering Approach
+            </h1>
+          </div>
+
+          <div class="images mt-11">
+            <div class="inner-img flex justify-around pt-3">
+              <img
+                class="mt-2 h-14 rounded-full"
+                src="https://s3.ap-south-1.amazonaws.com/assets.ynos.in/startup-logos/YNOS393110.jpg"
+                class=" "
+                alt=""
+              />
+              <h1 class="font-xl text-2x mt-3 w-52 text-white">
+                Technological Project Management
+              </h1>
+
+              <div class="sub-images mt-4 flex w-[40%] justify-evenly">
+                <div class="first-sub-image">
+                  <svg
+                    class="ml-7 h-8 w-6"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="1em"
+                    viewBox="0 0 512 512"
+                  >
+                    <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                      d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"
+                    />
+                  </svg>
+                  <h1 class="text-white">Watch later</h1>
+                </div>
+
+                <div class="second-sub-image">
+                  <svg
+                    class="ml-2 h-8 w-6"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="1em"
+                    viewBox="0 0 512 512"
+                  >
+                    <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                      d="M307 34.8c-11.5 5.1-19 16.6-19 29.2v64H176C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96h96v64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z"
+                    />
+                  </svg>
+                  <h1 class="text-white">Share</h1>
+                </div>
+              </div>
+            </div>
+            <div
+              class="second-div -mt-24 mr-72 flex w-60 justify-evenly bg-gray-900 p-3"
+            >
+              <div>
+                <h1 class="text-xl text-white">Watch on</h1>
+              </div>
+              <div>
+                <svg
+                  class="h-7"
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="1em"
+                  viewBox="0 0 576 512"
+                >
+                  <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                  <path
+                    d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"
+                  />
+                </svg>
+              </div>
+              <h1 class="text-xl text-white">YouTube</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="second m-6 mt-16 rounded-3xl border-4">
+      <div class="first-div">
+        <div class="head flex justify-evenly rounded-t-2xl bg-black p-3">
+          <h1 class="text-lg text-white">Threadbuild</h1>
+
+          <svg
+            class="h-8"
+            xmlns="http://www.w3.org/2000/svg"
+            height="1em"
+            viewBox="0 0 512 512"
+          >
+            <style>
+              <!-- svg{} -->
+            </style>
+            <path
+              d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"
+            />
+          </svg>
+        </div>
+        <div class="heads mb-44 bg-white">
+          <div>
+            <h1 class="ml-5 mt-9">
+              <a class="text-lg font-bold"> Description :</a> Watch the video
+              and threadbuild , and jot out key threads while watching the video
+            </h1>
+          </div>
+
+          <div
+            class="mt-10 flex justify-around border-y-4 border-gray-400 bg-slate-200 p-4"
+          >
+            <div class="arrow -ml-24">
+              <svg
+                class="h-10"
+                xmlns="http://www.w3.org/2000/svg"
+                height="1em"
+                viewBox="0 0 448 512"
+              >
+                <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <style>
+                  svg {
+                    fill: #19191a;
+                  }
+                </style>
+                <path
+                  d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z"
+                />
+              </svg>
+            </div>
+            <div class="">
+              <h1 class="-ml-44 text-3xl font-bold">Thread A</h1>
+            </div>
+          </div>
+          <div>
+            <div>rhefjf</div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
